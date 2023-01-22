@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "An attempt to make my own webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashwatshaurya/personal-website.git"
+  },
+  "author": "Shashwat Shaurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashwatshaurya/personal-website/issues"
+  },
+  "homepage": "https://github.com/shashwatshaurya/personal-website#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0"
+  }
+}
