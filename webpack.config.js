@@ -10,6 +10,7 @@ module.exports = {
     target: 'web',
     devServer: {
         port: '9500', // port of dev server
+        historyApiFallback: true,
         static: ['./public'], // the static file webpack should serve
         open: true, // open browser on dev server start
         hot: true, // Hot Module Replacement
