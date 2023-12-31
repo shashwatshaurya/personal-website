@@ -7,20 +7,20 @@ const Root = () => {
             <div className={"nav"}>
                 <ul className={"navElements"}>
                     <li className={"navElement"}>
-                        <Link to="home">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className={"navElement"}>
-                        <Link to="projects">Projects</Link>
+                        <Link to="/projects">Projects</Link>
                     </li>
                     <li className={"navElement"}>
-                        <Link to="blog">Blog</Link>
+                        <Link to="/blog">Blog</Link>
                     </li>
                     <li className={"navElement"}>
-                        <Link to="connect">Connect</Link>
+                        <Link to="/connect">Connect</Link>
                     </li>
                 </ul>
             </div>
-            {<Outlet /> ? <Outlet /> : <div className={"underConstruction"}>Site Under Construction</div>}
+            <Outlet />
             <div className={"footer"}>By Shashwat with <span className={"heart"}>&#10084;</span></div>
         </div>
     );
