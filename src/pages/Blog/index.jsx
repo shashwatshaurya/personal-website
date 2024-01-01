@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     console.log('INSIDE BLOG');
     return (
-        <div>
+        <div className="underConstruction">
             Blog Page
         </div>
     );

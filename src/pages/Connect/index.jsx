@@ -2,7 +2,7 @@ import React from 'react';
 
 const Connect = () => {
     return (
-        <div>
+        <div className="underConstruction">
             Connect Page
         </div>
     );

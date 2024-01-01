@@ -5,7 +5,7 @@ const ErrorPage = () => {
     const error = useRouteError();
 
     return (
-        <div>
+        <div className="underConstruction">
             Error Page
             {error.statusText || error.message}
         </div>
