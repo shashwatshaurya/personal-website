@@ -5,13 +5,14 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, "public"),
-        filename: "main.js"
+        filename: "main.js",
+        publicPath: '/' // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/')
     },
     target: 'web',
     devServer: {
         port: '9500', // port of dev server
-        historyApiFallback: true,
-        static: ['./public'], // the static file webpack should serve
+        historyApiFallback: true, // if route is not found essentially for deeper level routes, then this defaults to index.html
+        static: path.resolve(__dirname, 'public'), // the static file webpack should serve
         open: true, // open browser on dev server start
         hot: true, // Hot Module Replacement
         liveReload: true // liveReload as the name suggests
