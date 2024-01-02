@@ -1,9 +1,9 @@
 import React from 'react';
+import s from './style.module.scss';
 
 const Blog = () => {
-    console.log('INSIDE BLOG');
     return (
-        <div className="underConstruction">
+        <div className={s.underConstruction}>
             Blog Page
         </div>
     );

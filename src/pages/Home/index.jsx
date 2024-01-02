@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './style.module.scss';
 
 const Home = () => {
     return (
-        <div className="underConstruction">
+        <div className={s.underConstruction}>
             Home Page
         </div>
     );
