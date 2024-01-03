@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import s from './style.module.scss';
+import s from './style.module.scss'; // scss file needs to be like name.module.scss and should not be like import * from s
 
 const RootLayout = () => {
     return (
