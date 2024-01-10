@@ -1,23 +1,72 @@
 * {
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
 }
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #3F72AF; /* Set the color for unvisited links */
+}
+
+/* Set the color for visited links */
+a:visited {
+    color: #3F72AF;
+}
+
+/* Create the sliding underline */
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+    background-color: #112D4E; /* Match the color of the link */
+    transition: width 0.3s; /* Set the transition duration */
+}
+    
+/* Slide the underline on hover */
+a:hover::before {
+    width: 100%;
+}
+
+/* Set the color for hovered links */
+a:hover {
+    color: #112D4E;
+}
+
+/* Set the color for active links (when clicked) */
+a:active {
+    color: #DBE2EF;
+  }
 
 .nav {
     height: 3vh;
-}
 
-.navElements {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
+    .navElements {
+        display: flex;
+        justify-content: space-between;
 
-.navElement {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 3px;
+        .rightElements {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navElement {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 3px;
+            font-size: 2rem;
+        }
+
+        .nameLogo {
+            cursor: pointer;
+        }
+    }
 }
 
 .heart {
