@@ -1,82 +1,68 @@
+@import "../../styles/variables";
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "work sans", sans-serif;
+  color: $text-color;
+  background-color: $body-bg-color;
+}
+
+.pageWrapper {
+  margin: 2.5rem;
 }
 
 a {
-    position: relative;
-    text-decoration: none;
-    color: #3F72AF; /* Set the color for unvisited links */
+  position: relative;
+  text-decoration: none;
 }
 
 /* Set the color for visited links */
 a:visited {
-    color: #3F72AF;
-}
-
-/* Create the sliding underline */
-a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px; /* Adjust the thickness of the underline */
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Center the underline */
-    background-color: #112D4E; /* Match the color of the link */
-    transition: width 0.3s; /* Set the transition duration */
-}
-    
-/* Slide the underline on hover */
-a:hover::before {
-    width: 100%;
 }
 
 /* Set the color for hovered links */
 a:hover {
-    color: #112D4E;
+  color: $hover-nav-color;
 }
 
 /* Set the color for active links (when clicked) */
 a:active {
-    color: #DBE2EF;
-  }
+  color: $selected-nav-color;
+}
 
 .nav {
-    height: 3vh;
+  height: 2vh;
 
-    .navElements {
-        display: flex;
-        justify-content: space-between;
-
-        .rightElements {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .navElement {
-            margin-left: 2rem;
-            margin-right: 2rem;
-            padding: 3px;
-            font-size: 2rem;
-        }
-
-        .nameLogo {
-            cursor: pointer;
-        }
-    }
-}
-
-.heart {
-    color: rgb(217, 25, 25);
-    margin-left: 0.3rem;
-}
-
-.footer {
-    height: 7vh;
+  .navElements {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .leftElements {
+      display: flex;
+      justify-content: start;
+    }
+
+    .rightElements {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navElement {
+      padding: 0 1rem;
+      font-weight: $weight300;
+    }
+
+    .actualNav:nth-of-type(1),
+    .actualNav:nth-of-type(2),
+    .actualNav:nth-of-type(3) {
+      border-right: 0.08rem solid $black;
+    }
+  }
 }

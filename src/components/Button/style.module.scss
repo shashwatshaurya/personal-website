@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.btn {
+  border: 1px solid $corvid-border-yellow;
+  background-color: $yellow-ochre;
+  border-radius: 5px;
+}
+
+.normal {
+  padding: 0.5rem 1.5rem;
+  font-size: 15px;
+  letter-spacing: 0.02rem;
+  max-width: 8rem; 
+}

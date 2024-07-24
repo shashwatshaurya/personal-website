@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.textArea {
+  height: 10rem;
+  width: 20rem;
+  resize: none;
+  border: 1px solid $light-black;
+}
+
+textarea:hover {
+  border: 2px solid $black;
+}
+
+textarea:focus {
+  border: 2px solid $black;
+}

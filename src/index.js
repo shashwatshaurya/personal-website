@@ -9,6 +9,7 @@ const Blog = lazy(() => import('./pages/Blog'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Connect = lazy(() => import('./pages/Connect'));
+const Resume = lazy(() => import('./pages/Resume'));
 const NoMatch = lazy(() => import('./pages/NoMatch'));
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
                 <Route path="projects" element={<Projects />} />
                 <Route path="blog" element={<Blog />} />
                 <Route path="connect" element={<Connect />} />
+                <Route path="resume" element={<Resume />} />
                 <Route path="*" element={<NoMatch />} />
               </Route>
           </Routes>
