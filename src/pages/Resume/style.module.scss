@@ -1,0 +1,96 @@
+@import "../../styles/variables";
+.pageWrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 2rem;
+
+  .headerSection {
+    padding: 7rem 0 1rem 0;
+  }
+
+  .workExWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: $weigth600;
+    }
+
+    .right {
+      width: 27rem;
+
+      ul {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .companyWrapper,
+      .institutionWrapper {
+        margin-bottom: 3rem;
+
+        .companyIntro,
+        .institutionInfo {
+          font-weight: $weigth600;
+          font-size: 1.1rem;
+        }
+
+        .toFrom {
+          font-weight: $weigth500;
+          font-size: 0.8rem;
+          margin-bottom: 0.8rem;
+        }
+
+        .workDesc,
+        .achievementDesc {
+          margin-bottom: 0.3rem;
+        }
+
+        .techStack {
+          margin-top: 1rem;
+          font-weight: $weigth500;
+        }
+      }
+
+      .skillItem {
+        margin-bottom: 1.1rem;
+
+        .skillType {
+          font-weight: $weigth600;
+        }
+      }
+    }
+  }
+}
+
+.headerText {
+  font-size: 2.55rem;
+  font-weight: $weigth600;
+}
+
+.borderLine {
+  border-top: 1px solid $extra-light-black;
+}
+
+.sectionWrapper {
+  margin-left: 14rem;
+  margin-right: 14rem;
+  padding: 3rem 0;
+}
+
+.downloadBtnWrapper {
+  display: flex;
+  justify-content: center;
+
+  .downloadBtn {
+    padding: 1rem 1rem;
+    cursor: pointer;
+  }
+
+  .downloadBtn:hover {
+    padding: 1rem 1.1rem;
+  }
+}
