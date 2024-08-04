@@ -161,8 +161,9 @@ const Home = () => {
         </form>
         </div>
         <div className={s.rightContent}>
-          <blockquote>"Random Quote"</blockquote>
-          <div className={s.author}>-Tsun Tzu</div>
+          <blockquote>"सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |<br/>
+          अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||"</blockquote>
+          <div className={s.author}>-BG:CH18:V66, Shree Krishna</div>
         </div>
       </div>
     </>
