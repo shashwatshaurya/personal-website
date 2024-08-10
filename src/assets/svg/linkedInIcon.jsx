@@ -1,11 +1,12 @@
 import React from "react";
 
-const LinkedInIcon = () => {
+const LinkedInIcon = (props) => {
+  const { height = 16, width = 16 } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
+      width={width}
+      height={height}
       fill="currentColor"
       viewBox="0 0 16 16"
     >

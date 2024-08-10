@@ -6,7 +6,6 @@ const Button = (props) => {
   const { type, children, buttonClass, normal, large, small, onClick } = props;
   const combinedClass = [
     s.btn,
-    buttonClass,
     normal ? s.normal : "",
     large ? s.large : "",
     small ? s.small : "",
@@ -14,7 +13,7 @@ const Button = (props) => {
   switch (type) {
     case "email": {
       return (
-        <button type="submit" className={cx(...combinedClass)}>
+        <button type="submit" className={cx(...combinedClass, buttonClass)}>
           {children}
         </button>
       );
