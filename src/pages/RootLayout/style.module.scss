@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+
+* {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "work sans", sans-serif;
+  color: $text-color;
+  background-color: $body-bg-color;
+}
+
+.pageWrapper {
+  margin: 2.5rem;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* Set the color for visited links */
+a:visited {
+}
+
+/* Set the color for hovered links */
+a:hover {
+  color: $hover-nav-color;
+}
+
+/* Set the color for active links (when clicked) */
+a:active {
+  color: $selected-nav-color;
+}
+
+.nav {
+  height: 2vh;
+
+  .navElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .leftElements {
+      display: flex;
+      justify-content: start;
+    }
+
+    .rightElements {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navElement {
+      padding: 0 1rem;
+      font-weight: $weight300;
+    }
+
+    .actualNav:nth-of-type(1),
+    .actualNav:nth-of-type(2),
+    .actualNav:nth-of-type(3) {
+      border-right: 0.08rem solid $black;
+    }
+  }
+}

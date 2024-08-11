@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+
+.pageWrapper {
+  font-size: 2.5rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 5rem 15rem;
+    border-right: 1px solid $extra-light-black;
+  }
+
+  .right {
+    margin-left: 10rem;
+
+    .headerText {
+      font-weight: $weigth600;
+    }
+
+    .headerGreeting {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contactInfo {
+      font-size: 0.8rem;
+      color: $light-black;
+    }
+
+    .emailFormWrapper {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+
+      .row {
+        min-width: 35rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+      }
+
+      .subjectBox {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn {
+  border-radius: 50%;
+  cursor: pointer;
+  min-width: 28%;
+  aspect-ratio: 1/1;
+  font-weight: $weigth600;
+  font-size: 1.3rem;
+  padding: 0;
+  margin-left: 1.5rem;
+}
+
+.btn:hover {
+  background-color: $body-bg-color;
+  border-color: $corvid-border-yellow;
+}

@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.pageWrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 6rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  padding: 3rem 0;
+
+  .projectsHeader {
+    padding: 0 0 5rem 0;
+    font-size: 2.55rem;
+    font-weight: $weigth600;
+  }
+
+  .projectsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 5rem;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        max-width: 30rem;
+
+        .projectName {
+          font-size: 1.2rem;
+          font-weight: $weigth600;
+          margin-bottom: 2rem;
+        }
+
+        .projectDesc {
+          font-size: 1.1rem;
+          font-weight: $weight300;
+          line-height: 1.4rem;
+        }
+
+        .projectLink {
+          margin-top: 2rem;
+          cursor: pointer;
+        }
+      }
+
+      .right {
+        height: 20rem;
+        aspect-ratio: 1.5/1;
+        border: 2px solid $extra-light-black;
+      }
+    }
+  }
+}
