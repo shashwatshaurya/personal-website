@@ -100,8 +100,6 @@ const Home = () => {
     onSecond.current = false;
   }, []);
 
-  console.log(quote);
-
   return (
     <>
       <div className={s.first} id="first" ref={firstBoxRef}>

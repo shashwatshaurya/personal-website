@@ -7,14 +7,14 @@ import { hobbies } from "./constants";
 import s from "./style.module.scss";
 
 const runSlideShow = (f, t) => setInterval(()=>f.call(), t);
-const timer = 2000;
+const timer = 4000;
 
 const Hobbies = (props) => {
   const [selection, setSelection] = useState(0);
 
   const callbackedSlideshow = useCallback(() => runSlideShow(handleRightClick, timer), [timer]);
 
-  useEffect(()=>callbackedSlideshow(), [callbackedSlideshow]);
+  useEffect(()=>{callbackedSlideshow()}, [callbackedSlideshow]);
 
   const handleLeftClick = () => {
     setSelection((prev) =>
