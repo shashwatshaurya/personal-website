@@ -104,7 +104,7 @@ const Home = () => {
     <>
       <div className={s.first} id="first" ref={firstBoxRef}>
         <div className={s.myImageWrapper}>
-          <img src="./images/myImg.jpg"></img>
+          <img src="/personal-website/images/myImg.jpg"></img>
         </div>
         <div className={s.aboutMeWrapper}>
           <div className={s.greetText}>{greetText}</div>

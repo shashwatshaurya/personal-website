@@ -1,9 +1,12 @@
 {
+  "homepage": "https://shashwatshaurya.github.io/personal-website",
   "name": "personal-website",
   "version": "1.0.0",
   "description": "An attempt to make my own webpage",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server ./src/",
     "build": "Webpack ./src/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/shashwatshaurya/personal-website/issues"
   },
-  "homepage": "https://github.com/shashwatshaurya/personal-website#readme",
   "dependencies": {
     "@babel/cli": "^7.20.7",
     "path": "^0.12.7",
@@ -39,6 +41,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jest": "^27.2.1",
+    "gh-pages": "^6.1.1",
     "sass": "^1.69.6",
     "sass-loader": "^13.3.3",
     "style-loader": "^3.3.1",

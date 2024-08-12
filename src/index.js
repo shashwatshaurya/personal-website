@@ -20,6 +20,7 @@ export default function App() {
           <Routes>
               <Route path="/" element={<RootLayout />}>
                 <Route index element={<Home />} />
+                <Route path="/personal-website/index.html" element={<Home />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="blog" element={<Blog />} />
                 <Route path="connect" element={<Connect />} />

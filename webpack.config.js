@@ -1,12 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, "public"),
+        path: path.resolve(__dirname, "build"),
         filename: "main.js",
-        publicPath: '/' // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/')
+        publicPath: '/personal-website/' // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/')
     },
     target: 'web',
     devServer: {
