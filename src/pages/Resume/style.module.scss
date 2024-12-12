@@ -87,10 +87,9 @@
 
   .downloadBtn {
     padding: 1rem 1rem;
-    cursor: pointer;
-  }
-
-  .downloadBtn:hover {
-    padding: 1rem 1.1rem;
+    
+    &:hover {
+      padding: 1rem 1.1rem;
+    }
   }
 }

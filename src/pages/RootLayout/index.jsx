@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../../components/Logo";
-import Footer from '../../components/Footer';
+import Footer from "../../components/Footer";
 import s from "./style.module.scss"; // scss file needs to be like name.module.scss and should not be like import * from s
 
 const RootLayout = () => {
@@ -18,6 +18,9 @@ const RootLayout = () => {
             </div>
           </div>
           <div className={s.rightElements}>
+            <div className={cx(s.navElement, s.actualNav)}>
+              <Link to="/">Home</Link>
+            </div>
             <div className={cx(s.navElement, s.actualNav)}>
               <Link to="/resume">Resume</Link>
             </div>

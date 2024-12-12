@@ -12,9 +12,15 @@ const Projects = () => {
             <div className={s.left}>
               <div className={s.projectName}>{project.name}</div>
               <div className={s.projectDesc}>{project.description}</div>
-              <div className={s.projectLink}><a src={project.link}>Have a look!</a></div>
+              <div className={s.projectLink}>
+                <a href={project.link} target="blank">Have a look!</a>
+              </div>
             </div>
-            <div className={s.right}></div>
+            <div className={s.right}>
+              <a href={project.link} target="blank">
+                <img src={project.imageUrl} alt={project.altTxt} />
+              </a>
+            </div>
           </div>
         ))}
       </div>

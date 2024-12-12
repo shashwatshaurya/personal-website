@@ -7,6 +7,16 @@ import { sleep } from "../../common/utils";
 import { EMAIL } from "../../common/constants";
 import s from "./style.module.scss";
 import Button from "../../components/Button";
+import ReactLogo from "../../assets/svg/reactIcon";
+import NodeJSLogo from "../../assets/svg/nodejsIcon";
+import VueJSIcon from "../../assets/svg/vueJsIcon";
+import MongoDBLogo from "../../assets/svg/mongodbLogo";
+import MySQLLogo from "../../assets/svg/mysqlLogo";
+import WebpackLogo from "../../assets/svg/webpackLogo";
+import AWSS3Logo from "../../assets/svg/awsS3Logo";
+import DockerLogo from "../../assets/svg/dockerLogo";
+import ExpressJSLogo from "../../assets/svg/expressJSLogo";
+import Tooltip from "../../components/Tooltip";
 
 const Home = () => {
   const [greetText, setGreetText] = React.useState("");
@@ -111,10 +121,22 @@ const Home = () => {
           <div className={s.introText}>
             <div>A Bit About Me</div>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. I'm
-              a great place for you to tell a story and let your users know a
-              little more about you.
+              I'm a software developer with a knack to learn; someone who
+              understands code well. Been in the business for past 3 years and
+              still continuing. Would love to develop new products and grow
+              together.
             </p>
+          </div>
+          <div className={s.techStacks}>
+            <Tooltip content="ReactJS"><ReactLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="NodeJS"><NodeJSLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="VueJS"><VueJSIcon height="23" width="23" /></Tooltip>
+            <Tooltip content="MongoDb"><MongoDBLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="MySQL"><MySQLLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="Webpack"><WebpackLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="S3"><AWSS3Logo height="23" width="23" /></Tooltip>
+            <Tooltip content="Docker"><DockerLogo height="23" width="23" /></Tooltip>
+            <Tooltip content="Express"><ExpressJSLogo height="23" width="23" /></Tooltip>
           </div>
           <div className={s.navButtons}>
             <ul>
@@ -143,24 +165,26 @@ const Home = () => {
       </div>
       <div className={s.fourth} id="fourth">
         <div className={s.leftContent}>
-        <div>HOW WAS YOUR DAY?</div>
-        <form
-          className={s.form}
-          action={`mailto:${EMAIL}?body=${body}`}
-          method="GET"
-        >
-          <TextArea
-            placeholder="I hope it was great!&#13;If not, feel free to connect if I can be of any help.&#13;If you have a good story to share about today, you must.&#13;&#13;The stage is all yours!"
-            onChange={(e) => setBody(e.target.value)}
-          />
-          <Button type="email" normal>
-            Send
-          </Button>
-        </form>
+          <div>HOW WAS YOUR DAY?</div>
+          <form
+            className={s.form}
+            action={`mailto:${EMAIL}?body=${body}`}
+            method="GET"
+          >
+            <TextArea
+              placeholder="I hope it was great!&#13;If not, feel free to connect if I can be of any help.&#13;If you have a good story to share about today, you must.&#13;&#13;The stage is all yours!"
+              onChange={(e) => setBody(e.target.value)}
+            />
+            <Button type="email" normal>
+              Send
+            </Button>
+          </form>
         </div>
         <div className={s.rightContent}>
-          <blockquote>"सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |<br/>
-          अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||"</blockquote>
+          <blockquote>
+            "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |<br />
+            अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||"
+          </blockquote>
           <div className={s.author}>-BG:CH18:V66, Shree Krishna</div>
         </div>
       </div>

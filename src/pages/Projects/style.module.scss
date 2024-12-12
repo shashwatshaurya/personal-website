@@ -50,8 +50,15 @@
 
       .right {
         height: 20rem;
-        aspect-ratio: 1.5/1;
+        width: 30rem;
         border: 2px solid $extra-light-black;
+
+        a>img {
+          height: 19rem;
+          width: 29rem;
+          padding: 0.1rem;
+          overflow: hidden;
+        }
       }
     }
   }

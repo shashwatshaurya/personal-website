@@ -11,7 +11,7 @@ const Card = ({ item }) => {
       </div>
       <div className={s.infoWrapper}>
         <div className={s.name}>{name}</div>
-        <div className={s.desc}>{desc}</div>
+        <div className={s.desc}>{desc?.substr(0, 94)+'...'}</div>
       </div>
     </div>
   );

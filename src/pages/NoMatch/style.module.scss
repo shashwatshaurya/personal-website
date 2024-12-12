@@ -1,7 +1,25 @@
-.underConstruction {
-    font-size: 8rem;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.noMatchPageWrapper {
+  font-size: 2rem;
+  height: 90vh;
+  display: block;
+
+  .contentWrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .noRouteImg {
+      height: 200px;
+      width: 200px;
+      position: relative;
+      left: 30%;
+    }
+
+    .goToHome {
+      margin-top: 3rem;
+      margin-left: 35%;
+      max-width: 10rem !important;
+    }
+  }
 }
