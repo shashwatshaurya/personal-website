@@ -1,24 +1,14 @@
-import React from "react";
-
-const VueJSIcon = (props) => {
-  const { height = 16, width = 16 } = props;
-  return (
-    <div>
-      <svg
-        height={height}
-        width={width}
+<svg
         viewBox="0 0 64 64"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlns-xlink="http://www.w3.org/1999/xlink"
         xml-space="preserve"
         xmlns-serif="http://www.serif.com/"
-        style={{
-          "fill-rule": 'evenodd',
-          "clip-rule": 'evenodd',
-          "stroke-linejoin": 'round',
-          "stroke-miterlimit": 2,
-        }}
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        stroke-linejoin='round'
+        stroke-miterlimit="2"
         fill="#000000"
       >
         <title>VueJS</title>
@@ -36,7 +26,7 @@ const VueJSIcon = (props) => {
             y="-128"
             width="1280"
             height="800"
-            style={{ fill: 'none' }}
+            fill='none'
           ></rect>{" "}
           <g id="Icons1" serif-id="Icons">
             {" "}
@@ -56,11 +46,11 @@ const VueJSIcon = (props) => {
               {" "}
               <path
                 d="M17.595,11.204l8.91,0l5.536,9.391l5.591,-9.391l8.831,0l-14.422,25.359l-14.446,-25.359Z"
-                style={{ fill: "#435466" }}
+                fill="#435466"
               ></path>{" "}
               <path
                 d="M8.089,11.204l23.952,41.845l24.126,-41.845l-9.704,0l-14.422,25.359l-14.446,-25.359l-9.506,0Z"
-                style={{ fill: "#4dba87" }}
+                fill="#4dba87"
               ></path>{" "}
             </g>{" "}
             <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g>{" "}
@@ -90,8 +80,3 @@ const VueJSIcon = (props) => {
           </g>{" "}
         </g>
       </svg>
-    </div>
-  );
-};
-
-export default VueJSIcon;

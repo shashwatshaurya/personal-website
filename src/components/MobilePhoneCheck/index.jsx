@@ -1,5 +1,5 @@
 import React from "react";
-import NoMobile from "../../assets/svg/NoMobile";
+import NoMobile from "assets/svg/NoMobile";
 import s from "./style.module.scss";
 
 const MobilePhoneCheck = () => {

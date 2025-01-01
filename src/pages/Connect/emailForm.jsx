@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Input from "../../components/Input";
-import TextArea from "../../components/TextArea";
-import Button from "../../components/Button";
+import Input from "components/Input";
+import TextArea from "components/TextArea";
+import Button from "components/Button";
 import s from "./style.module.scss";
-import { EMAIL } from "../../common/constants";
+import { EMAIL } from "common/constants";
 
 const EmailForm = () => {
   const [firstName, setFirstName] = useState("");

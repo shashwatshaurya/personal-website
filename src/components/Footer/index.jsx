@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { EMAIL } from "../../common/constants";
-import LinkedInIcon from "../../assets/svg/linkedInIcon";
-import GithubIcon from "../../assets/svg/githubIcon";
-import TwitterIcon from "../../assets/svg/twitterIcon";
+import { EMAIL } from "common/constants";
+import LinkedInIcon from "assets/svg/linkedInIcon";
+import GithubIcon from "assets/svg/githubIcon.svg";
+import TwitterIcon from "assets/svg/twitterIcon";
 import s from "./style.module.scss";
 
 const Footer = () => {

@@ -1,8 +1,8 @@
 import React, { useCallback, useState, useEffect } from "react";
 import HobbyCard from "./hobbyCard";
-import LeftIcon from "../../assets/svg/leftIcon";
-import RightIcon from "../../assets/svg/rightIcon";
-import Button from "../../components/Button";
+import LeftIcon from "assets/svg/leftIcon";
+import RightIcon from "assets/svg/rightIcon";
+import Button from "components/Button";
 import { hobbies } from "./constants";
 import s from "./style.module.scss";
 

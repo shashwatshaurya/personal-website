@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import s from "./style.module.scss";
-import Button from "../../components/Button";
+import Button from "components/Button";
 
 const NoMatch = () => {
   return (

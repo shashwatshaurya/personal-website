@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Button from "../../components/Button";
+import Button from "components/Button";
 import s from './style.module.scss';
 
 const ErrorBoundary = ({ children }) => {

@@ -1,8 +1,8 @@
 import React from "react";
 import EmailForm from "./emailForm";
-import LinkedInIcon from "../../assets/svg/linkedInIcon";
-import GithubIcon from "../../assets/svg/githubIcon";
-import TwitterIcon from "../../assets/svg/twitterIcon";
+import LinkedInIcon from "assets/svg/linkedInIcon";
+import GithubIcon from "assets/svg/githubIcon.svg";
+import TwitterIcon from "assets/svg/twitterIcon";
 import s from "./style.module.scss";
 
 const Connect = () => {

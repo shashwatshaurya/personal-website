@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TextArea from "../../components/TextArea";
+import TextArea from "components/TextArea";
 import Hobbies from "./hobbies";
 import { languages, qualities } from "./constants";
-import { sleep } from "../../common/utils";
-import { EMAIL } from "../../common/constants";
+import { sleep } from "common/utils";
+import { EMAIL } from "common/constants";
 import s from "./style.module.scss";
-import Button from "../../components/Button";
-import ReactLogo from "../../assets/svg/reactIcon";
-import NodeJSLogo from "../../assets/svg/nodejsIcon";
-import VueJSIcon from "../../assets/svg/vueJsIcon";
-import MongoDBLogo from "../../assets/svg/mongodbLogo";
-import MySQLLogo from "../../assets/svg/mysqlLogo";
-import WebpackLogo from "../../assets/svg/webpackLogo";
-import AWSS3Logo from "../../assets/svg/awsS3Logo";
-import DockerLogo from "../../assets/svg/dockerLogo";
-import ExpressJSLogo from "../../assets/svg/expressJSLogo";
-import Tooltip from "../../components/Tooltip";
+import Button from "components/Button";
+import ReactLogo from "assets/svg/reactIcon.svg";
+import NodeJSLogo from "assets/svg/nodejsIcon.svg";
+import VueJSIcon from "assets/svg/vueJsIcon.svg";
+import MongoDBLogo from "assets/svg/mongodbLogo.svg";
+import MySQLLogo from "assets/svg/mysqlLogo.svg";
+import WebpackLogo from "assets/svg/webpackLogo.svg";
+import AWSS3Logo from "assets/svg/awsS3Logo.svg";
+import DockerLogo from "assets/svg/dockerLogo.svg";
+import ExpressJSLogo from "assets/svg/expressJSLogo.svg";
+import Tooltip from "components/Tooltip";
 
 const Home = () => {
   const [greetText, setGreetText] = React.useState("");

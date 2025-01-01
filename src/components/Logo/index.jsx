@@ -1,6 +1,6 @@
 import React from "react";
-import LogoCircle from "../../assets/svg/logoCircle.jsx";
-import { NAME_CAMEL, DESIGNATION } from "../../common/constants";
+import LogoCircle from "assets/svg/logoCircle.jsx";
+import { NAME_CAMEL, DESIGNATION } from "common/constants";
 import s from "./style.module.scss";
 
 const Logo = () => {

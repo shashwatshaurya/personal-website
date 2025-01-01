@@ -1,9 +1,4 @@
-import React from "react";
-
-const DockerLogo = ({ height = 16, width = 16 }) => {
-  return (
-    <div>
-      <svg viewBox="0 0 16 16" height={`${height}px`} width={`${width}px`} xmlns="http://www.w3.org/2000/svg" fill="none">
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
         <title>Docker</title>
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -18,8 +13,3 @@ const DockerLogo = ({ height = 16, width = 16 }) => {
           ></path>
         </g>
       </svg>
-    </div>
-  );
-};
-
-export default DockerLogo;
