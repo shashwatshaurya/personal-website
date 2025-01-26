@@ -32,6 +32,7 @@
   - svg files segregation
   - using alias @ for file
   - reduce image load times
+  - image fetching strategy
   - use asset loader instead of copywebpackplugin for assets
   - reduce build time
   - remove unused libraries

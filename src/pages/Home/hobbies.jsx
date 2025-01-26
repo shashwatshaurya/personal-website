@@ -6,15 +6,20 @@ import Button from "components/Button";
 import { hobbies } from "./constants";
 import s from "./style.module.scss";
 
-const runSlideShow = (f, t) => setInterval(()=>f.call(), t);
+const runSlideShow = (f, t) => setInterval(() => f.call(), t);
 const timer = 4000;
 
 const Hobbies = (props) => {
   const [selection, setSelection] = useState(0);
 
-  const callbackedSlideshow = useCallback(() => runSlideShow(handleRightClick, timer), [timer]);
+  const callbackedSlideshow = useCallback(
+    () => runSlideShow(handleRightClick, timer),
+    [timer]
+  );
 
-  useEffect(()=>{callbackedSlideshow()}, [callbackedSlideshow]);
+  useEffect(() => {
+    callbackedSlideshow();
+  }, [callbackedSlideshow]);
 
   const handleLeftClick = () => {
     setSelection((prev) =>
@@ -30,18 +35,22 @@ const Hobbies = (props) => {
 
   return (
     <>
-      <div className={s.hobbiesHeader}>Hobbies</div>
-      <div className={s.row}>
-        <Button onClick={handleLeftClick} buttonClass={s.leftArrowBtn}>
-          <LeftIcon />
-        </Button>
-        <HobbyCard
-          imgUrl={hobbies[selection]?.imgUrl}
-          imgText={hobbies[selection]?.imgText}
-        />
-        <Button onClick={handleRightClick} buttonClass={s.rightArrowBtn}>
-          <RightIcon />
-        </Button>
+      <div className={s.third} id="third">
+        <div>
+          <div className={s.hobbiesHeader}>Hobbies</div>
+          <div className={s.row}>
+            <Button onClick={handleLeftClick} buttonClass={s.leftArrowBtn}>
+              <LeftIcon />
+            </Button>
+            <HobbyCard
+              imgUrl={hobbies[selection]?.imgUrl}
+              imgText={hobbies[selection]?.imgText}
+            />
+            <Button onClick={handleRightClick} buttonClass={s.rightArrowBtn}>
+              <RightIcon />
+            </Button>
+          </div>
+        </div>
       </div>
     </>
   );
