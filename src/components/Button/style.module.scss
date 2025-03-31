@@ -1,9 +1,14 @@
-@import "../../styles/variables";
+@import "~styles/variables";
 
 .btn {
   border: 1px solid $corvid-border-yellow;
   background-color: $yellow-ochre;
   border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $body-bg-color;
+  }
 }
 
 .normal {

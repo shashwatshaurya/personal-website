@@ -8,7 +8,7 @@ export const languages = [
   "હેલો", // Gujarati
   "ಹಲೋ", // Kannada
   "ഹലോ", // Malayalam
-  "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi
+  // "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi
   "Bonjour", // French
   "Hola", // Spanish
   "Hallo", // German

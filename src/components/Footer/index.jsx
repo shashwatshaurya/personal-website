@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { EMAIL } from '../../common/constants';
-import LinkedInIcon from "../../assets/svg/linkedInIcon";
-import GithubIcon from "../../assets/svg/githubIcon";
-import TwitterIcon from "../../assets/svg/twitterIcon";
+import { EMAIL } from "common/constants";
+import LinkedInIcon from "assets/svg/linkedInIcon";
+import GithubIcon from "assets/svg/githubIcon.svg";
+import TwitterIcon from "assets/svg/twitterIcon";
 import s from "./style.module.scss";
 
 const Footer = () => {
@@ -13,6 +13,9 @@ const Footer = () => {
         <div className={s.footerNav}>
           <div className={s.footerHeading}>Site Map</div>
           <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>
               <Link to="/resume">Resume</Link>
             </li>
@@ -28,14 +31,26 @@ const Footer = () => {
           </ul>
         </div>
         <div className={s.footerEmail}>
-            <div className={s.footerHeading}>Email</div>
-            {EMAIL}
+          <div className={s.footerHeading}>Email</div>
+          {EMAIL}
         </div>
         <div>
-            <div className={s.footerHeading}>Socials</div>
-            <a href='#'><i><LinkedInIcon /></i></a>
-            <a href='#'><i><GithubIcon /></i></a>
-            <a href='#'><i><TwitterIcon /></i></a>
+          <div className={s.footerHeading}>Socials</div>
+          <a href="#">
+            <i>
+              <LinkedInIcon />
+            </i>
+          </a>
+          <a href="#">
+            <i>
+              <GithubIcon />
+            </i>
+          </a>
+          <a href="#">
+            <i>
+              <TwitterIcon />
+            </i>
+          </a>
         </div>
         <div className={s.copyRight}>
           &copy; 2024 by Shashwat with<span className={s.heart}>&#10084;</span>{" "}

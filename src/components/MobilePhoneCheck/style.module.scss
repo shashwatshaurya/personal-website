@@ -1,0 +1,21 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+
+  .contentWrapper {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3rem 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}

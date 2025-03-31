@@ -1,0 +1,18 @@
+@import "~styles/variables";
+
+.targetWrapper {
+  position: relative;
+
+  .toolTip {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $corvid-border-pink;
+    color: $body-bg-color;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+}
