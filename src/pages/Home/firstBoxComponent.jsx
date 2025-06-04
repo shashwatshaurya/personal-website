@@ -47,7 +47,7 @@ const FirstBoxComponent = () => {
     <div className={s.first} id="first" ref={firstBoxRef}>
       <LazyImage
         appliedClass={s.myImageWrapper}
-        src="./personal-website/images/myImg.jpg"
+        src="./images/myImg.jpg"
         alt="Shashwat"
         blurhash={blurhashConstants["myImg.jpg"]}
         cHeight="31rem"
