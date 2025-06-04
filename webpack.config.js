@@ -6,13 +6,15 @@ const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 
+const buildFolderName = "build";
+
 module.exports = {
-  mode: 'production',
-  entry: './src/index.js',
+  mode: "production",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, buildFolderName),
     filename: "main.js",
-    publicPath: '/personal-website/' // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/'),
+    publicPath: "/personal-website/", // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/'),
   },
   target: "web",
   devServer: {
@@ -91,21 +93,21 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "src/assets/images"),
-          to: path.resolve(__dirname, "public/images"),
+          to: path.resolve(__dirname, `${buildFolderName}/images`),
         },
         {
           from: path.resolve(__dirname, "src/assets/pdf"),
-          to: path.resolve(__dirname, "public/pdf"),
+          to: path.resolve(__dirname, `${buildFolderName}/pdf`),
         },
         {
           from: path.resolve(__dirname, "src/assets/icons"),
-          to: path.resolve(__dirname, "public"),
+          to: path.resolve(__dirname, buildFolderName),
         },
       ],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
-      filename: path.resolve(__dirname, "public/index.html"),
+      filename: path.resolve(__dirname, `${buildFolderName}/index.html`),
     }),
   ],
 };

@@ -14,19 +14,16 @@ const Footer = () => {
           <div className={s.footerHeading}>Site Map</div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/personal-website/resume">Resume</Link>
             </li>
             <li>
-              <Link to="/resume">Resume</Link>
+              <Link to="/personal-website/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/personal-website/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/connect">Contact</Link>
+              <Link to="/personal-website/connect">Contact</Link>
             </li>
           </ul>
         </div>

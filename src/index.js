@@ -31,13 +31,16 @@ export default function App() {
       <ErrorBoundary>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path="/" element={<RootLayout />}>
+            <Route path="/personal-website" element={<RootLayout />}>
               <Route index element={<Home />} />
-              <Route path="/personal-website/index.html" element={<Home />} />
+              <Route path="index.html" element={<Home />} />
               <Route path="projects" element={<Projects />} />
               <Route path="blog" element={<Blog />} />
               <Route path="connect" element={<Connect />} />
               <Route path="resume" element={<Resume />} />
+              <Route path="*" element={<NoMatch />} />
+            </Route>
+            <Route path="*" element={<RootLayout />}>
               <Route path="*" element={<NoMatch />} />
             </Route>
           </Routes>
