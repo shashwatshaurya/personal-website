@@ -4,7 +4,7 @@ export const projects = [
     link: "http://localhost:9500/",
     description:
       "A portfolio site to showcase my work and have my own space on this internet to speak out my mind and connect with like minded individuals",
-    imageUrl: "./images/WebsiteImg.png",
+    imageUrl: "/personal-website/images/WebsiteImg.png",
     altTxt: "Personal Website Image"
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     link: "http://localhost:9500/",
     description:
       "A DNS Server to host cname, a, and other records. Useful for someone who isn't getting the desired domain/sub-domain name. This is under development, you can help by contributing to the code.",
-    imageUrl: "./images/WebsiteImg.png",
+    imageUrl: "/personal-website/images/WebsiteImg.png",
     altTxt: "Personal Website Image"
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     link: "http://localhost:9500/",
     description:
       "A react based utility library having peculiar and common UI components. Highly flexible and adaptive. Has support for StoryBook. Active contribution is welcomed.",
-    imageUrl: "./images/WebsiteImg.png",
+    imageUrl: "/personal-website/images/WebsiteImg.png",
     altTxt: "Personal Website Image"
   },
 ];

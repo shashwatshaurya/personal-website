@@ -26,7 +26,7 @@ const ErrorBoundary = ({ children }) => {
     // Render any custom fallback UI here
     return (
       <div className={s.underConstruction}>
-        <img src="./images/wetfloor.webp" alt="Man Slipping on wet floor" />
+        <img src="/personal-website/images/wetfloor.webp" alt="Man Slipping on wet floor" />
         <h1>OOPS!!! Looks like something went wrong.</h1>
         <Button type="email" buttonClass={s.goToHome} normal>
           <a
