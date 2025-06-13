@@ -104,6 +104,10 @@ module.exports = {
           from: path.resolve(__dirname, "src/assets/icons"),
           to: path.resolve(__dirname, buildFolderName),
         },
+        {
+          from: path.resolve(__dirname, "src/404.html"),
+          to: path.resolve(__dirname, `${buildFolderName}/404.html`),
+        },
       ],
     }),
     new HtmlWebpackPlugin({
