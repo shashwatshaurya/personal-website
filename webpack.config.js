@@ -5,20 +5,21 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const fs = require("fs");
 
 const buildFolderName = "build";
 
 module.exports = {
-  mode: "production",
+  mode: process.env.NODE_ENV || "development",
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, buildFolderName),
     filename: "main.js",
-    publicPath: "/personal-website/", // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/'),
+    publicPath: process.env.PUBLIC_PATH || "/", // specifies the location from where the browser will fetch resources, can be a url, cdn or path to another folder under the root directory ('public' in our case) or the root itself (as used here - '/'),
   },
   target: "web",
   devServer: {
-    port: "9500", // port of dev server
+    port: process.env.PORT || "9500", // port of dev server
     historyApiFallback: true, // if route is not found essentially for deeper level routes, then this defaults to index.html
     static: path.resolve(__dirname, "public"), // the static file webpack should serve
     open: true, // open browser on dev server start
@@ -108,6 +109,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
       filename: path.resolve(__dirname, `${buildFolderName}/index.html`),
+      /**
+       * "templateParameters" exposes variables to index.html.
+       * Use <%= PUBLIC_PATH %> or <%= SITE_TITLE %> inside the HTML.
+       * Only whitelist what you actually want exposed.
+       */
+      templateParameters: {
+        PUBLIC_PATH: process.env.PUBLIC_PATH || "/",
+      },
     }),
+    (() => {
+      // Determine environment-specific env file: .env.<NODE_ENV> (falls back to .env)
+      const env = process.env.NODE_ENV || "development";
+      const envFile = path.resolve(__dirname, `.env.${env}`);
+      const finalPath = fs.existsSync(envFile) ? envFile : path.resolve(__dirname, ".env");
+      return new Dotenv({ path: finalPath, systemvars: false });
+    })(),
   ],
 };

@@ -31,7 +31,7 @@ export default function App() {
       <ErrorBoundary>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path="/personal-website" element={<RootLayout />}>
+            <Route path={`${process.env.PUBLIC_PATH ?? '/'}`} element={<RootLayout />}>
               <Route index element={<Home />} />
               <Route path="index.html" element={<Home />} />
               <Route path="projects" element={<Projects />} />
