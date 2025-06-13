@@ -47,7 +47,7 @@ const FirstBoxComponent = () => {
     <div className={s.first} id="first" ref={firstBoxRef}>
       <LazyImage
         appliedClass={s.myImageWrapper}
-        src="/personal-website/images/myImg.jpg"
+        src={`${process.env.PUBLIC_PATH ?? '/'}images/myImg.jpg`}
         alt="Shashwat"
         blurhash={blurhashConstants["myImg.jpg"]}
         cHeight="31rem"
@@ -96,13 +96,13 @@ const FirstBoxComponent = () => {
         <div className={s.navButtons}>
           <ul>
             <li>
-              <Link to="/personal-website/resume">Resume</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}resume`}>Resume</Link>
             </li>
             <li>
-              <Link to="/personal-website/projects">Projects</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}projects`}>Projects</Link>
             </li>
             <li>
-              <Link to="/personal-website/blog">Blog</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}blog`}>Blog</Link>
             </li>
             {/* <li><Link to='/connect'>Contact</Link></li> */}
           </ul>

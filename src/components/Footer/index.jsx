@@ -14,16 +14,16 @@ const Footer = () => {
           <div className={s.footerHeading}>Site Map</div>
           <ul>
             <li>
-              <Link to="/personal-website/resume">Resume</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}resume`}>Resume</Link>
             </li>
             <li>
-              <Link to="/personal-website/projects">Projects</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}projects`}>Projects</Link>
             </li>
             <li>
-              <Link to="/personal-website/blog">Blog</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}blog`}>Blog</Link>
             </li>
             <li>
-              <Link to="/personal-website/connect">Contact</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}connect`}>Contact</Link>
             </li>
           </ul>
         </div>

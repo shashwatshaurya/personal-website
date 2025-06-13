@@ -7,7 +7,7 @@ const NoMatch = () => {
   return (
     <div className={s.noMatchPageWrapper}>
       <div className={s.contentWrapper}>
-        <img src="/personal-website/images/404png.png" className={s.noRouteImg} />
+        <img src={`${process.env.PUBLIC_PATH ?? '/'}images/404png.png`} className={s.noRouteImg} />
         <br />
         You've landed on an invalid Route!!! <br />
         Use Nav Elements to navigate, OR <br />

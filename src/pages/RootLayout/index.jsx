@@ -12,26 +12,26 @@ const RootLayout = () => {
         <div className={s.navElements}>
           <div className={s.leftElements}>
             <div className={s.navElement}>
-              <Link to="/personal-website">
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}`}>
                 <Logo />
               </Link>
             </div>
           </div>
           <div className={s.rightElements}>
             <div className={cx(s.navElement, s.actualNav)}>
-              <Link to="/personal-website">Home</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}`}>Home</Link>
             </div>
             <div className={cx(s.navElement, s.actualNav)}>
-              <Link to="/personal-website/resume">Resume</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}resume`}>Resume</Link>
             </div>
             <div className={cx(s.navElement, s.actualNav)}>
-              <Link to="/personal-website/projects">Projects</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}projects`}>Projects</Link>
             </div>
             <div className={cx(s.navElement, s.actualNav)}>
-              <Link to="/personal-website/blog">Blog</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}blog`}>Blog</Link>
             </div>
             <div className={cx(s.navElement, s.actualNav)}>
-              <Link to="/personal-website/connect">Connect</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}connect`}>Connect</Link>
             </div>
           </div>
         </div>
