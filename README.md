@@ -117,4 +117,4 @@ This project is licensed under the ISC License - see the [package.json](package.
 
 **Made with ❤️ and countless cups of coffee by [Shashwat Shaurya](https://github.com/shashwatshaurya)**
 
-*P.S. - If this attempt fails too, there's always n*100+1. But I have a good feeling about this one! 🤞*
+*P.S. - If this attempt fails too, there's always n\*100+1. But I have a good feeling about this one! 🤞*
