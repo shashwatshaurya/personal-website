@@ -34,6 +34,7 @@ const FourthBoxComponent = () => {
           <TextArea
             placeholder="I hope it was great!&#13;If not, feel free to connect if I can be of any help.&#13;If you have a good story to share about today, you must.&#13;&#13;The stage is all yours!"
             onChange={(e) => setBody(e.target.value)}
+            name="dayMessage"
           />
           <Button type="email" normal>
             Send

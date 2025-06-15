@@ -22,11 +22,15 @@ const EmailForm = () => {
             placeholder="First Name"
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
+            autoComplete="given-name"
+            name="firstName"
           />
           <Input
             placeholder="Last Name"
             onChange={(e) => setLastName(e.target.value)}
             type="text"
+            autoComplete="family-name"
+            name="lastName"
           />
         </div>
 
@@ -36,6 +40,7 @@ const EmailForm = () => {
             onChange={(e) => setSubject(e.target.value)}
             type="text"
             inputClass={s.subjectBox}
+            name="subject"
           />
         </div>
 
@@ -43,6 +48,7 @@ const EmailForm = () => {
           <TextArea
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Body"
+            name="message"
           />
           <Button type="email" large buttonClass={s.btn}>
             Submit

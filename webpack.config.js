@@ -25,6 +25,7 @@ module.exports = {
     open: true, // open browser on dev server start
     hot: true, // Hot Module Replacement
     liveReload: true, // liveReload as the name suggests
+    https: true, // Enable HTTPS to fix form autofill security issue
   },
   resolve: {
     /** "extensions"
