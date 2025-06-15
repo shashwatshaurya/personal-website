@@ -109,6 +109,14 @@ module.exports = {
           from: path.resolve(__dirname, "src/404.html"),
           to: path.resolve(__dirname, `${buildFolderName}/404.html`),
         },
+        {
+          from: path.resolve(__dirname, "src/assets/public/robots.txt"),
+          to: path.resolve(__dirname, `${buildFolderName}/robots.txt`),
+        },
+        {
+          from: path.resolve(__dirname, "src/assets/public/sitemap.xml"),
+          to: path.resolve(__dirname, `${buildFolderName}/sitemap.xml`),
+        },
       ],
     }),
     new HtmlWebpackPlugin({
