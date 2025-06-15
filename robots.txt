@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shashwatshaurya.github.io/personal-website/sitemap.xml
+
+# Disallow crawling of build files and development directories
+Disallow: /build/
+Disallow: /node_modules/
+Disallow: /*.js.map
+Disallow: /*.css.map
