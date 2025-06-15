@@ -4,18 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Shashwat Shaurya - Full Stack Developer & Software Engineer. Explore my portfolio, projects, and technical blog. Expert in React, JavaScript, and modern web technologies." />
+    <meta name="keywords" content="Shashwat Shaurya, Full Stack Developer, Software Engineer, React Developer, JavaScript, Web Development, Portfolio, Resume" />
+    <meta name="author" content="Shashwat Shaurya" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Shashwat Shaurya | Full Stack Developer & Software Engineer" />
+    <meta property="og:description" content="Explore my portfolio, projects, and technical insights. Passionate about creating exceptional web experiences with modern technologies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shashwatshaurya.github.io/personal-website/" />
+    <meta property="og:image" content="https://shashwatshaurya.github.io/personal-website/images/og-image.jpg" />
+    <meta property="og:site_name" content="Shashwat Shaurya Portfolio" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shashwatshaurya" />
+    <meta name="twitter:creator" content="@shashwatshaurya" />
+    <meta name="twitter:title" content="Shashwat Shaurya | Full Stack Developer" />
+    <meta name="twitter:description" content="Full Stack Developer specializing in React and modern web technologies. Check out my projects and technical blog." />
+    <meta name="twitter:image" content="https://shashwatshaurya.github.io/personal-website/images/og-image.jpg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shashwatshaurya.github.io/personal-website/" />
+    
+    <!-- Existing font preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="<%= PUBLIC_PATH %>favicon.ico" />
-    <title>Shashwat Shaurya | Personal</title>
+    <link rel="apple-touch-icon" href="<%= PUBLIC_PATH %>apple-touch-icon.png" />
+    
+    <!-- Updated Title -->
+    <title>Shashwat Shaurya | Full Stack Developer & Software Engineer</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shashwat Shaurya",
+        "jobTitle": "Full Stack Developer",
+        "description": "Passionate Full Stack Developer and Software Engineer specializing in React, JavaScript, and modern web technologies",
+        "url": "https://shashwatshaurya.github.io/personal-website/",
+        "sameAs": [
+          "https://github.com/shashwatshaurya",
+          "https://linkedin.com/in/shashwatshaurya",
+          "https://twitter.com/shashwatshaurya"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Paytm"
+        },
+        "knowsAbout": ["React", "JavaScript", "Web Development", "Full Stack Development", "Software Engineering"],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "BIT Mesra, Ranchi"
+        }
+      }
+    </script>
+    
     <!-- GitHub Pages SPA redirect script -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
