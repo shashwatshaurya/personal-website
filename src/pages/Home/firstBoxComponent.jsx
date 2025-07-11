@@ -50,18 +50,22 @@ const FirstBoxComponent = () => {
         src={`${process.env.PUBLIC_PATH ?? '/'}images/myImg.jpg`}
         alt="Shashwat"
         blurhash={blurhashConstants["myImg.jpg"]}
-        cHeight="31rem"
-        cWidth="31rem"
+        cHeight="34rem"
+        cWidth="34rem"
       />
       <div className={s.aboutMeWrapper}>
         <div className={s.greetText}>{greetText}</div>
         <div className={s.introText}>
-          <div>A Bit About Me</div>
+          <div>Hi, I'm Shashwat</div>
           <p>
-            I'm a software developer with a knack to learn; someone who
-            understands code well. Been in the business for past 3 years and
-            still continuing. Would love to develop new products and grow
-            together.
+            I'm a software developer who loves building clean, reliable, and scalable applications.
+            With 4+ years of experience, I enjoy turning ideas into real-world products.
+            I'm always up for learning new technologies, solving meaningful problems,
+            and collaborating with teams that value growth and good code.
+            <br />
+            <span className={s.highlight}>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}connect`}>Let's build something great together!</Link>
+            </span>
           </p>
         </div>
         <div className={s.techStacks}>
