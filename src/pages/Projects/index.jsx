@@ -12,9 +12,13 @@ const Projects = () => {
             <div className={s.left}>
               <div className={s.projectName}>{project.name}</div>
               <div className={s.projectDesc}>{project.description}</div>
-              <div className={s.projectLink}>
-                <a href={project.link} target="blank">Have a look!</a>
-              </div>
+              {!project.isUnderDevelopment && (
+                <div className={s.projectLink}>
+                  <a href={project.link} target="blank">
+                    Have a look!
+                  </a>
+                </div>
+              )}
             </div>
             <div className={s.right}>
               <a href={project.link} target="blank">

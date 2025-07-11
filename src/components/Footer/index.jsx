@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { EMAIL } from "common/constants";
+import { EMAIL, LINKEDIN, GITHUB, TWITTER } from "common/constants";
 import LinkedInIcon from "assets/svg/linkedInIcon";
 import GithubIcon from "assets/svg/githubIcon.svg";
 import TwitterIcon from "assets/svg/twitterIcon";
@@ -33,17 +33,17 @@ const Footer = () => {
         </div>
         <div>
           <div className={s.footerHeading}>Socials</div>
-          <a href="#">
+          <a href={LINKEDIN} target="_blank">
             <i>
               <LinkedInIcon />
             </i>
           </a>
-          <a href="#">
+          <a href={GITHUB} target="_blank">
             <i>
               <GithubIcon />
             </i>
           </a>
-          <a href="#">
+          <a href={TWITTER} target="_blank">
             <i>
               <TwitterIcon />
             </i>

@@ -3,6 +3,7 @@ import EmailForm from "./emailForm";
 import LinkedInIcon from "assets/svg/linkedInIcon";
 import GithubIcon from "assets/svg/githubIcon.svg";
 import TwitterIcon from "assets/svg/twitterIcon";
+import { LINKEDIN, GITHUB, TWITTER } from "common/constants";
 import s from "./style.module.scss";
 
 const Connect = () => {
@@ -10,17 +11,17 @@ const Connect = () => {
     <div className={s.pageWrapper}>
       <div className={s.left}>
         {/* <div>Socials</div> */}
-        <a href="#">
+        <a href={LINKEDIN} target="_blank">
           <i className={s.socialIcon}>
             <LinkedInIcon height={80} width={80} />
           </i>
         </a>
-        <a href="#">
+        <a href={GITHUB} target="_blank">
           <i className={s.socialIcon}>
             <GithubIcon height={80} width={80} />
           </i>
         </a>
-        <a href="#">
+        <a href={TWITTER} target="_blank">
           <i className={s.socialIcon}>
             <TwitterIcon height={80} width={80} />
           </i>
