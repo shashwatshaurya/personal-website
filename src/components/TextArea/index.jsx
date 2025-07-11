@@ -3,7 +3,14 @@ import cx from "classnames";
 import s from "./style.module.scss";
 
 const TextArea = (props) => {
-  const { propClass, placeholder, onChange, name, value, required } = props;
+  const {
+    propClass = '',
+    placeholder = 'I am A textarea',
+    onChange = () => { },
+    name,
+    value,
+    required,
+    autoComplete = 'off' } = props;
   return (
     <textarea
       className={cx(s.textArea, propClass)}
@@ -12,14 +19,9 @@ const TextArea = (props) => {
       name={name}
       value={value}
       required={required}
+      autoComplete={autoComplete}
     />
   );
-};
-
-TextArea.defaultProps = {
-  propClass: "",
-  placeholder: "I am A textarea",
-  onChange: () => { },
 };
 
 export default TextArea;
