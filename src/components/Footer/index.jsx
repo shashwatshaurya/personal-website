@@ -33,20 +33,14 @@ const Footer = () => {
         </div>
         <div>
           <div className={s.footerHeading}>Socials</div>
-          <a href={LINKEDIN} target="_blank">
-            <i>
-              <LinkedInIcon />
-            </i>
+          <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={s.socialLink}>
+            <LinkedInIcon />
           </a>
-          <a href={GITHUB} target="_blank">
-            <i>
-              <GithubIcon />
-            </i>
+          <a href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={s.socialLink}>
+            <GithubIcon />
           </a>
-          <a href={TWITTER} target="_blank">
-            <i>
-              <TwitterIcon />
-            </i>
+          <a href={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={s.socialLink}>
+            <TwitterIcon />
           </a>
         </div>
         <div className={s.copyRight}>
@@ -54,7 +48,7 @@ const Footer = () => {
           <br />
           Idea from Nicol Rider.
         </div>
-      </div>
+      </div >
     </>
   );
 };

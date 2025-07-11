@@ -22,19 +22,32 @@ const FourthBoxComponent = () => {
       });
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (body) {
+      const mailtoLink = `mailto:${EMAIL}?subject=About My Day&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  };
+
   return (
     <div className={s.fourth} id="fourth">
       <div className={s.leftContent}>
         <div>HOW WAS YOUR DAY?</div>
         <form
           className={s.form}
-          action={`mailto:${EMAIL}?body=${body}`}
-          method="GET"
+          action="#"
+          method="POST"
+          autoComplete="off"
+          noValidate={false}
+          onSubmit={handleSubmit}
         >
           <TextArea
             placeholder="I hope it was great!&#13;If not, feel free to connect if I can be of any help.&#13;If you have a good story to share about today, you must.&#13;&#13;The stage is all yours!"
             onChange={(e) => setBody(e.target.value)}
             name="dayMessage"
+            autoComplete="off"
+            required
           />
           <Button type="email" normal>
             Send
