@@ -84,6 +84,10 @@ module.exports = {
           format: {
             comments: false,
           },
+          compress: {
+            drop_console: process.env.NODE_ENV === "production",
+            drop_debugger: process.env.NODE_ENV === "production",
+          },
         },
       }),
     ],
