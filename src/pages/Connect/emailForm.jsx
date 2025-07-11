@@ -11,10 +11,20 @@ const EmailForm = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Create mailto link with form data
+    const mailtoLink = `mailto:${EMAIL}?subject=${encodeURIComponent(`${firstName} ${lastName} - ${subject}`)}&body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <form
-      action={`mailto:${EMAIL}?body=${message}&subject=${firstName}_${lastName}_${subject}`}
-      method="GET"
+      onSubmit={handleSubmit}
+      method="post"
+      action="#"
+      autoComplete="on"
+      noValidate={false}
     >
       <div className={s.emailFormWrapper}>
         <div className={s.row}>
@@ -24,6 +34,8 @@ const EmailForm = () => {
             type="text"
             autoComplete="given-name"
             name="firstName"
+            value={firstName}
+            required
           />
           <Input
             placeholder="Last Name"
@@ -31,6 +43,8 @@ const EmailForm = () => {
             type="text"
             autoComplete="family-name"
             name="lastName"
+            value={lastName}
+            required
           />
         </div>
 
@@ -41,6 +55,8 @@ const EmailForm = () => {
             type="text"
             inputClass={s.subjectBox}
             name="subject"
+            value={subject}
+            required
           />
         </div>
 
@@ -49,8 +65,10 @@ const EmailForm = () => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Body"
             name="message"
+            value={message}
+            required
           />
-          <Button type="email" large buttonClass={s.btn}>
+          <Button type="submit" large buttonClass={s.btn}>
             Submit
           </Button>
         </div>

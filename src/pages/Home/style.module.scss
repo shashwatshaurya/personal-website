@@ -9,8 +9,8 @@
   margin-left: 20%;
 
   .myImageWrapper {
-    width: 31rem;
-    height: 31rem;
+    width: 34rem;
+    height: 34rem;
 
     img, canvas {
       aspect-ratio: auto;
@@ -98,6 +98,13 @@
           color: $black;
         }
       }
+    }
+    .highlight {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $yellow-ochre;
+      text-decoration-thickness: 0.1rem;
+      text-underline-offset: 0.2rem;
     }
   }
 }

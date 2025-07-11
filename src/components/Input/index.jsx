@@ -3,7 +3,7 @@ import cx from "classnames";
 import s from "./style.module.scss";
 
 const Input = (props) => {
-  const { onChange, type, placeholder, inputClass, autoComplete, name } = props;
+  const { onChange, type, placeholder, inputClass, autoComplete, name, value, required } = props;
   return (
     <input
       type={type}
@@ -12,6 +12,8 @@ const Input = (props) => {
       className={cx(s.inputNative, inputClass)}
       autoComplete={autoComplete}
       name={name}
+      value={value}
+      required={required}
     />
   );
 };
