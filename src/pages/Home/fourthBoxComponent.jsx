@@ -9,17 +9,26 @@ const FourthBoxComponent = () => {
   const [quote, setQuote] = React.useState({ q: "", a: "" });
 
   React.useEffect(() => {
-    fetch("https://zenquotes.io/api/today", { mode: "no-cors", method: "GET" })
-      .then((resp) => resp.json())
-      .then((jsonResp) => {
+    const fetchQuote = async () => {
+      try {
+        // Using CORS proxy to avoid CORS issues
+        const resp = await fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://zenquotes.io/api/today"));
+        const data = await resp.json();
+        const jsonResp = JSON.parse(data.contents);
         setQuote({
-          a: jsonResp?.a || "Tsun Tzu",
-          q: jsonResp?.q || "Random Quote",
+          a: jsonResp?.[0]?.a || "Sun Tzu",
+          q: jsonResp?.[0]?.q || "The supreme excellence is to subdue the enemy without fighting.",
         });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      } catch (error) {
+        console.error("Failed to fetch quote:", error);
+        // Fallback to default quote
+        setQuote({
+          a: "Sun Tzu",
+          q: "The supreme excellence is to subdue the enemy without fighting.",
+        });
+      }
+    };
+    fetchQuote();
   }, []);
 
   const handleSubmit = (e) => {
@@ -56,8 +65,8 @@ const FourthBoxComponent = () => {
       </div>
       <div className={s.rightContent}>
         <blockquote>
-          "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |<br />
-          अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||"
+          "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |"<br />
+          "अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||"
         </blockquote>
         <div className={s.author}>-BG:CH18:V66, Shree Krishna</div>
       </div>
