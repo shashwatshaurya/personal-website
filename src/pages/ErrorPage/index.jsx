@@ -8,6 +8,7 @@ const ErrorBoundary = ({ children }) => {
   const handleError = (error) => {
     // You can log the error to an error reporting service
     console.error("Error Boundary caught an error:", error.error.stack);
+    umami.trackEvent("error-boundary-caught-error", { error: error.error.stack });
     if (error?.error?.stack) setHasError(true);
     else setHasError(false);
   };
@@ -30,7 +31,7 @@ const ErrorBoundary = ({ children }) => {
         <h1>OOPS!!! Looks like something went wrong.</h1>
         <Button type="email" buttonClass={s.goToHome} normal>
           <a
-            onClick={()=>location.href = '/'}
+            onClick={() => location.href = '/'}
             style={{ backgroundColor: "rgba(0,0,0,0)", color: "black" }}
           >
             Go To Home
