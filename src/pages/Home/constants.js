@@ -31,7 +31,7 @@ export const qualities = [
   "A Skilled Professional",
   "Curious",
   "Tech-Savvy",
-  "A Perfectionist",
+  // "A Perfectionist",
 ];
 
 export const hobbies = [
