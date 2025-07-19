@@ -38,8 +38,8 @@
   }
 
   .cardWrapper {
-    width: 15rem;
-    height: 18rem;
+    width: 17rem;
+    height: 20rem;
     overflow: hidden;
     cursor: pointer;
     padding: 0.5rem;
@@ -78,6 +78,7 @@
 
   .cardWrapper:hover {
     box-shadow: 0 0 1rem 0.1rem $extra-light-black;
+    transition: box-shadow 0.2s ease-in-out;
   }
 
   .genereCardsWrapper {
