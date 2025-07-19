@@ -16,7 +16,7 @@ const Download = (props) => {
 
   return (
     <div className={cx(s.sectionWrapper, s.downloadBtnWrapper)}>
-      <Button onClick={handleDownload} buttonClass={s.downloadBtn} normal>
+      <Button data-umami-event="download-resume" onClick={handleDownload} buttonClass={s.downloadBtn} normal>
         Download
       </Button>
     </div>

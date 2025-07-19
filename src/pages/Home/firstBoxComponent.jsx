@@ -100,13 +100,13 @@ const FirstBoxComponent = () => {
         <div className={s.navButtons}>
           <ul>
             <li>
-              <Link to={`${process.env.PUBLIC_PATH ?? '/'}resume`}>Resume</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}resume`} data-umami-event="resume-link-home">Resume</Link>
             </li>
             <li>
-              <Link to={`${process.env.PUBLIC_PATH ?? '/'}projects`}>Projects</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}projects`} data-umami-event="projects-link-home">Projects</Link>
             </li>
             <li>
-              <Link to={`${process.env.PUBLIC_PATH ?? '/'}blog`}>Blog</Link>
+              <Link to={`${process.env.PUBLIC_PATH ?? '/'}blog`} data-umami-event="blog-link-home">Blog</Link>
             </li>
             {/* <li><Link to='/connect'>Contact</Link></li> */}
           </ul>

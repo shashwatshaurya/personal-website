@@ -33,13 +33,13 @@ const Footer = () => {
         </div>
         <div>
           <div className={s.footerHeading}>Socials</div>
-          <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={s.socialLink}>
+          <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={s.socialLink} data-umami-event="linkedin-link-footer">
             <LinkedInIcon />
           </a>
-          <a href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={s.socialLink}>
+          <a href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={s.socialLink} data-umami-event="github-link-footer">
             <GithubIcon />
           </a>
-          <a href={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={s.socialLink}>
+          <a href={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={s.socialLink} data-umami-event="twitter-link-footer">
             <TwitterIcon />
           </a>
         </div>

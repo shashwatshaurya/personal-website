@@ -11,17 +11,17 @@ const Connect = () => {
     <div className={s.pageWrapper}>
       <div className={s.left}>
         {/* <div>Socials</div> */}
-        <a href={LINKEDIN} target="_blank">
+        <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-umami-event="linkedin-link-connect">
           <i className={s.socialIcon}>
             <LinkedInIcon height={80} width={80} />
           </i>
         </a>
-        <a href={GITHUB} target="_blank">
+        <a href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-umami-event="github-link-connect">
           <i className={s.socialIcon}>
             <GithubIcon height={80} width={80} />
           </i>
         </a>
-        <a href={TWITTER} target="_blank">
+        <a href={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter" data-umami-event="twitter-link-connect">
           <i className={s.socialIcon}>
             <TwitterIcon height={80} width={80} />
           </i>
